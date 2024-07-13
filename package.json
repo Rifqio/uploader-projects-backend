@@ -1,0 +1,21 @@
+{
+  "name": "uploader-project-be",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "grpc": "nodemon src/proto/server.ts",
+    "migrate:dev": "npx prisma migrate dev --schema src/prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.10",
+    "@prisma/client": "^5.16.1",
+    "hono": "^4.4.12",
+    "lodash": "^4.17.21",
+    "paseto": "^3.1.4",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/lodash": "^4.17.6",
+    "prisma": "^5.16.1"
+  }
+}
